@@ -124,7 +124,7 @@ public class iTunes
 {
 	public static func Instance() -> iTunes {
 		let app = SBApplication(bundleIdentifier: "com.apple.iTunes")
-		return iTunes(app as! iTunesApplication)
+		return iTunes(app! as iTunesApplication)
 	}
 
 	public var airPlayDevices: Array<AirPlayDevice> {

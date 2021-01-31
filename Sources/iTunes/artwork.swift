@@ -47,7 +47,7 @@ public class Artwork : Item
 	public var downloaded: Bool { get { return _item.downloaded! } }
 
 	// the data format for this piece of artwork
-	public var format: Int { get { return Int(_item.format!) } }
+	public var format: Int { get { return Int(truncating: _item.format!) } }
 
 	// kind or purpose of this piece of artwork
 	public var kind: Int {
